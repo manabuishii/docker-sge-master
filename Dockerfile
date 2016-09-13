@@ -7,8 +7,6 @@ RUN apt-get update -qq ; apt-get upgrade ; \
 RUN useradd -m dummy
 RUN echo "dummy:dummy" | chpasswd
 #
-ADD setup.sh /usr/local/bin/setup.sh
-RUN chmod +x /usr/local/bin/setup.sh
+ADD setup_gridengine.sh /usr/local/bin/setup_gridengine.sh
+RUN chmod +x /usr/local/bin/setup_gridengine.sh
 
-#
-#ENTRYPOINT ["/usr/local/bin/setup.sh"]
