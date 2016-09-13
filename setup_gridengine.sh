@@ -82,3 +82,10 @@ qconf -Aq /tmp/qconf-aq.txt
 sed -i -e 's/^mesg n//' /root/.profile
 
 # echo "hostname ; date" | qsub
+
+
+#
+for HOST in $@
+do
+  qconf -as $HOST
+done
