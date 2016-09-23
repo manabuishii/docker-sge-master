@@ -18,3 +18,10 @@ echo "hostname ; date" | qsub
 ```
 ls -l /root
 ```
+
+# About log files
+
+About log files
+
+[Rotating and truncating Sun Grid Engine Log Files](http://gridscheduler.sourceforge.net/howto/rotatelogs.html)
+
